@@ -1,0 +1,13 @@
+{
+    "sales": [
+      { "product": "Produit A", "quantity": 120, "revenue": 2400, "month": "2024-01" },
+      { "product": "Produit B", "quantity": 80, "revenue": 1600, "month": "2024-02" },
+      { "product": "Produit C", "quantity": 150, "revenue": 3000, "month": "2024-03" },
+      { "product": "Produit A", "quantity": 100, "revenue": 2000, "month": "2023-11" },
+      { "product": "Produit B", "quantity": 200, "revenue": 4000, "month": "2023-12" }
+    ],
+    "users": {
+      "active": 340,
+      "total": 5000
+    }
+  }

@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+
+
+/* CSS du tableau*/
+/* Conteneur du tableau pour le rendre responsive */
+.responsive-table {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f7f7f7;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Pour les petits écrans, réduire la taille de la police */
+@media (max-width: 600px) {
+  th,
+  td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+/* CSS POUR LE SELECT FIELD*/
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+select {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Widgets Grid */
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+/* css des widget*/
+.widget {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 250px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.widget h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+/* css des charts graphique */
+/* Charts Grid */
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.chart {
+  flex: 1 1 calc(50% - 20px);
+  min-width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .widget {
+    flex: 1 1 100%; /* Full width for smaller screens */
+  }
+  .chart {
+    flex: 1 1 100%;
+  }
+}
+.download-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* css du button download*/
+.download-button:hover {
+  background-color: #45a049;
+}
